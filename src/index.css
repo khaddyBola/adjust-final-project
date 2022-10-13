@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --color-primary: #24245e;
+    --color-secondary: #06b1bd;
+}
+
+body {
+    font-family: 'Roboto Serif', serif;
+    overflow-x: hidden;
+}
+
+/***********************
+PAYMENT
+**********************/
+
+.payment {
+    padding: 9.6rem 0;
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: var(--color-secondary);
+}
+
+.payment-header-2 {
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: var(--color-primary);
+}
+
+span {
+    border-bottom: 5px dashed var(--color-secondary);
+}
+
+.payment-text {
+    text-align: center;
+    line-height: 1.4rem;
+    margin-top: 1.8rem;
+}
+
+
+.payment-container {
+    display: flex;
+    grid-template-columns: (3, 1fr);
+    gap: 5rem;
+    padding: 4rem 4.2rem 2rem;
+
+}
+
+.payment-img {
+    width: 8rem;
+    height: 8rem;
+    margin: 1.6rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-card {
+    border-radius: 3rem;
+    border: 1px solid rgba(128, 128, 128, 0.856);
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.payment-card:hover {
+    border: 3px solid var(--color-secondary);
+}
+
+.payment-title {
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+.payment-info {
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+
+
+/***********************
+BENEFIT
+**********************/
+main {
+    padding: 9.6rem 4rem;
+
+}
+
+
+.benefit {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    align-items: center;
+}
+
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    column-gap: 10rem;
+}
+
+.benefit-header {
+    color: var(--color-secondary);
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+}
+
+.benefit-header-2 {
+    color: var(--color-primary);
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.benefit-text {
+    line-height: 1.4rem;
+} 
+
+.benefit-img {
+    width: 5.4rem;
+    height: 5.4rem;
+    margin-bottom: 1.6rem;
+    display: block;
+    align-items: left;
+    text-align: left;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px; 
+}
+
+.benefit-heroimg {
+    width: 100%;
+    height: 70vh;
 }

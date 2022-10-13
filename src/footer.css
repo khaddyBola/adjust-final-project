@@ -1,0 +1,102 @@
+:root {
+    --color-primary: #24245e;
+    --color-secondary: #06b1bd;
+}
+
+.footer {
+    padding: 8.8rem 1.8rem;
+    background-color: var(--color-primary);
+}
+
+.grid {
+    display: grid;
+    column-gap: 1.4rem;
+    row-gap: 2rem;
+    margin-bottom: 9.6rem;
+}
+  
+  
+.grid--footer {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footerLogo {
+    display: block;
+    margin-bottom: 2.2rem;
+    color: #fff;
+}
+  
+.footerText {
+    margin: 2rem 0;
+    color: #fff;
+    line-height: 2rem;
+}
+  
+.socialLinks {
+    display: flex;
+    gap: 2.4rem;
+    color: #fff;
+    list-style: none;
+}
+  
+.socialIcon {
+    height: 1.2rem;
+    width: 1.2rem;
+    background: var(--color-secondary);
+    padding: 1.2rem;
+    margin-left: 0 auto;
+    color: #eee !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+.footerLinks {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+    list-style: none;
+}
+  
+.footerHeading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.2rem;
+    color: #fff;
+  
+}
+  
+.footerLink:link, .footerLink:visited {
+    line-height: 2px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+  
+.footerLink:hover, .footerLink:active {
+    color: rgba(187, 180, 180, 0.823);
+} 
+  
+.copyRight {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(238, 238, 238, 0.339);
+    width: 90%;
+    margin-left: 4rem;
+}
+  
+.copytext, h3 {
+    color: #fff;
+    margin-top: 2.2rem;
+}
+  
